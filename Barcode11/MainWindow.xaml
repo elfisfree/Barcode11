@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Barcode11"
         mc:Ignorable="d"
-        Title="Генератор штрих-кода" Height="450" Width="800"
+        Title="Генератор штрих-кода" Height="550" Width="800"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style x:Key="ButtonStyle" TargetType="Button">
@@ -56,8 +56,9 @@
         <ComboBox Grid.Row="1" x:Name="cmbProducts" Style="{StaticResource ComboBoxStyle}"
                   DisplayMemberPath="nameProd" SelectedValuePath="barcodeNumber" SelectionChanged="CmbProducts_SelectionChanged"/>
         <TextBox Grid.Row="2" x:Name="txtBox" Style="{StaticResource TextBoxStyle}" TextChanged="TxtBox_TextChanged"/>
-        <Border Grid.Row="3" x:Name="barcodeBorder" Height="270" Width="600" BorderBrush="LightBlue" BorderThickness="1" Margin="10" Visibility="Collapsed">
-            <Canvas x:Name="barcodeCan" Height="270" Width="250" Background="White"/>
+        <Border Grid.Row="3" x:Name="barcodeBorder" Height="270" Width="600" BorderBrush="LightBlue" BorderThickness="1" Margin="10" Visibility="Collapsed"
+                HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Canvas x:Name="barcodeCan" Height="270" Width="250" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
         <Button Grid.Row="4" x:Name="btnGenerate" Content="Сгенерировать код" Style="{StaticResource ButtonStyle}" Click="BtnGenerate_Click"/>
     </Grid>
