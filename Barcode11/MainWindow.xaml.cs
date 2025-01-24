@@ -44,6 +44,7 @@ namespace Barcode11
             dictB.Add(6, new List<int> { 4, 1, 1, 1 });
             dictB.Add(7, new List<int> { 2, 1, 3, 1 });
             dictB.Add(8, new List<int> { 3, 1, 2, 1 });
+            dictB.Add(9, new List<int> { 3, 1, 1, 2 });
 
             dictC.Add(0, new List<int> { 3, 2, 1, 1 });
             dictC.Add(1, new List<int> { 2, 2, 2, 1 });
